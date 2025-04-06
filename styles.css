@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cutive&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.navbar {
+    background-color: #ff64de;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: 'Abril Fatface';
+}
+
+.navbar-title {
+    font-size: 24px;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.sidebar {
+    background-color: #ff64de;
+    color: white;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
+    z-index: 999;
+}
+
+.sidebar-header {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ff64de;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    font-family: 'Pathway Gothic One';
+    font-size: 2rem;
+}
+
+.sidebar-menu li {
+    padding: 10px 15px;
+}
+
+.sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-menu li:hover {
+    background-color: #ad3192;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+}
+
+.content.expanded {
+    margin-left: 250px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+.column {
+    flex: 24%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
